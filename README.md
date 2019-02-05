@@ -1,4 +1,4 @@
-# lisaui
+# DirectSp-vue-errorhandler
 
 ## Project setup
 ```
