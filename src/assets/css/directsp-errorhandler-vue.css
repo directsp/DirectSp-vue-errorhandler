@@ -1,0 +1,246 @@
+/************ Modal ************/
+.error-handler-container .modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+    padding-top: 0;
+}
+
+.error-handler-container .modal-mask .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.error-handler-container .modal-mask .modal-container {
+    overflow: hidden;
+    direction: rtl;
+    overflow-y: auto;
+    text-align: center;
+    width: 30%;
+    margin: 0px auto;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    left: 5%;
+    max-height: 550px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+.error-handler-container .modal-header {
+    background: #fff;
+    padding: 7px 0;
+    text-align: right;
+    direction: rtl;
+}
+
+.error-handler-container .modal-header h5 {
+    margin: 0;
+    font-size: 12px;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 27px;
+}
+
+.error-handler-container .modal-container .modal-body {
+    max-height: 430px;
+    overflow-y: auto;
+    padding: 25px 10px 15px;
+}
+
+.error-handler-container .modal-mask .modal-body .form-group span.colon {
+    font-size: 9px;
+    color: #474747;
+    line-height: 28px;
+    float: right;
+    display: block;
+    margin-left: 5px;
+}
+
+.error-handler-container .modal-mask .modal-body .form-control {
+    border: 1px solid #ddd;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 30px;
+}
+
+/************ Error Modal ************/
+.error-handler-container #error-message-modal.modal-mask {
+    z-index: 1001;
+}
+
+.error-handler-container #error-message-modal.modal-mask .modal-container {
+    width: 50%;
+}
+
+.error-handler-container #error-message-modal .modal-header h3 {
+    padding-right: 15px;
+    color: #666;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "iransans";
+    line-height: 25px;
+}
+
+.error-handler-container #error-message-modal .modal-header i {
+    font-size: 18px;
+    padding-left: 15px;
+    line-height: 25px;
+    color: red;
+    cursor: pointer;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-advance {
+    font-family: arial;
+    direction: ltr;
+    text-align: left;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-simple {
+    font-family: "iransans";
+    font-size: 13px;
+    direction: rtl;
+    text-align: center;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-simple .error-simple-pic {
+    margin-bottom: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-simple .error-simple-text503 {
+    color: #3a3a3a;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-simple .error-simple-text55027 {
+    color: orange;
+}
+
+.error-handler-container #error-message-modal .modal-body .error-simple .error-simple-text55028 {
+    color: #215a78;
+}
+/************ Captcha ************/
+.error-handler-container #captcha .modal-body .form-group:first-child{
+    text-align: right;
+    color: #333;
+    font-size: 12px;
+}
+
+.error-handler-container #captcha .form-group img{
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+.error-handler-container #captcha .form-control.input{
+    direction: ltr;
+    text-align: right;
+}
+
+/************ Modal Footer ************/
+.error-handler-container .modal-footer {
+    padding: 0px;
+    font-family: "iransans";
+    direction: rtl;
+}
+
+.error-handler-container .modal-footer button {
+    float: left;
+}
+
+/************ Modal Button ************/
+.error-handler-container .modal-footer .btn {
+    align-items: center;
+    background: #e0e0e0;
+    border-radius: 2px;
+    color: #000;
+    display: inline-flex;
+    height: 34px;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: center;
+    margin: 6px;
+    min-width: 100px;
+    outline: 0;
+    padding: 0 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    vertical-align: middle;
+}
+
+.error-handler-container .modal-footer .btn.focus,
+.error-handler-container .modal-footer .btn:focus {
+    box-shadow: 0 0 0 0.1rem rgba(0,123,255,.25);
+}
+
+.error-handler-container .modal-footer button .btn__content {
+    line-height: 30px !important;
+    transition: unset;
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.error-handler-container .modal-footer button.btn.cancel {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    color: #666;
+    box-shadow: 0 0 0 #fff;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.error-handler-container .modal-footer button.btn.cancel:hover {
+    color: #E00000;
+    transition: none;
+}
+
+.error-handler-container .modal-footer button.btn.verify {
+    background-color: #4caf50;
+    border-color: #4caf50;
+    color: #fff;
+}
+
+.error-handler-container .modal-footer button.btn.verify:hover {
+    color: #fff;
+}
+
+.error-handler-container .modal-footer i.icon.cancel-icon {
+    color: #999;
+    font-size: 15px;
+}
+
+.error-handler-container .modal-footer button.btn.cancel:hover i.icon.cancel-icon {
+    /* color: #E00000; */
+    color: #d55c8a;
+}
+
+.error-handler-container .modal-footer i.icon.verify-icon {
+    font-size: 16px;
+}
+
+@media (max-width: 786px) {
+    .error-handler-container .modal-mask .modal-container{
+        right: 1%;
+        left: 1%;
+        width: 320px !important;
+    }
+}
